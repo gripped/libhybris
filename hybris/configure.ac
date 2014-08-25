@@ -210,11 +210,14 @@ AC_CONFIG_FILES([
 	input/libis.pc
 	camera/Makefile
 	camera/libcamera.pc
+	media/libmedia.pc
+	media/Makefile
 	vibrator/Makefile
 	vibrator/libvibrator.pc
 	include/Makefile
 	utils/Makefile
 	tests/Makefile
+
 ])
 
 AM_COND_IF([WANT_WAYLAND], [AC_CONFIG_FILES([egl/platforms/common/wayland-egl.pc])])
